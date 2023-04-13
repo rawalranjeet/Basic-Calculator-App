@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="64sp"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView_result"
+        android:textAllCaps="false"
+        />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter First Number"
+        android:inputType="number"
+        android:id="@+id/edt_1"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Second Number"
+        android:inputType="number"
+        android:id="@+id/edt_2"
+        />
+
+   <GridLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/layout_grid"
+       android:layout_marginBottom="200dp"
+       >
+       <Button
+           android:layout_width="65dp"
+           android:layout_height="wrap_content"
+           android:text="+"
+           android:textSize="50sp"
+           android:backgroundTint="#FF5722"
+           android:id="@+id/btn_add"
+           />
+       <Button
+           android:layout_width="65dp"
+           android:layout_height="wrap_content"
+           android:text="-"
+           android:textSize="50sp"
+           android:backgroundTint="#FF5722"
+           android:layout_marginStart="10dp"
+           android:id="@+id/btn_sub"
+           />
+       <Button
+           android:layout_width="65dp"
+           android:layout_height="wrap_content"
+           android:textAllCaps="false"
+           android:text="x"
+           android:textSize="50sp"
+           android:backgroundTint="#FF5722"
+           android:layout_marginStart="10dp"
+           android:id="@+id/btn_mult"
+           />
+       <Button
+           android:layout_width="60dp"
+           android:layout_height="wrap_content"
+           android:text="÷"
+           android:textSize="50sp"
+           android:backgroundTint="#FF5722"
+           android:id="@+id/btn_div"
+           android:layout_marginStart="10dp"
+           />
+       <Button
+           android:layout_width="60dp"
+           android:layout_height="wrap_content"
+           android:text="c"
+           android:textSize="50sp"
+           android:backgroundTint="#9C27B0"
+           android:id="@+id/btn_clear"
+           android:layout_marginStart="10dp"
+           />
+
+   </GridLayout>
+
+
+
+
+
+
+</LinearLayout>
